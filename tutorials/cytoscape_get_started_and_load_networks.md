@@ -17,8 +17,11 @@ This tutorial is based on [Cytoscape Tutorials](https://cytoscape.org/cytoscape-
 4. What type of analyses can we do with Cytoscape? <br> 
 Here you will find a list of possible analyses you can do in biology using Cytoscape: [network analysis](https://github.com/cytoscape/cytoscape-tutorials/wiki#network-analysis)
 
-## Network data types
-#### Cytoscape can import network data from:
+## Supported Network File Formats
+Cytoscape can read network files written in several formats.
+To learn more about supported formats, see the [Cytoscape Manual](https://manual.cytoscape.org/en/stable/Supported_Network_File_Formats.html)
+<br>
+In particular, Cytoscape can import network data from:
 - Files (or URLs)
 - Excel, TSV, CSV
 - XGMML: eXtensible Graph Markup and Modelling Language
@@ -28,7 +31,6 @@ Here you will find a list of possible analyses you can do in biology using Cytos
 - SIF: Simple Interaction Format
 - GML: Graph Markup Language
 - ... and others depending on loaded Apps
-
 - Public repositories:
   - PSICQUIC
   - STRING (via the stringApp)
@@ -40,7 +42,7 @@ Here you will find a list of possible analyses you can do in biology using Cytos
 - Automation:
   - Command line scripts
   - CyREST via R, Python, etc
-#### Cytoscape can load tables from:
+Moreover, Cytoscape can load tables from:
 - Files (or URLs)
   - Excel, TSV, CSV
 - Public repositories
@@ -48,6 +50,15 @@ Here you will find a list of possible analyses you can do in biology using Cytos
 - Automation:
   - Command line scripts
   - CyREST via R, Python, etc
+
+
+#### SIF format
+SIF is a simple interaction format consisting of three columns of data: source, interaction and target. 
+To learn more about the SIF format, see the Cytoscape manual.
+
+Download galFiltered.sif. This sample file is also included with your Cytoscape installation, in the sampleData folder.
+Load the network via '''File → Import → Network from File....'''
+To see the whole network, select '''View → Fit Content'''.
 
 ## Loading networks and Tables
 - [Loading Network Tutorial](https://cytoscape.org/cytoscape-tutorials/protocols/loading-networks/#/)
