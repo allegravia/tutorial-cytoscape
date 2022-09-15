@@ -68,3 +68,14 @@ This tutorial describes the details of importing an existing network and applyin
 This tutorial describes how to import expression data from a spreadsheet, and how to link it to already loaded networks.
 - [Importing Network From Table](https://cytoscape.org/cytoscape-tutorials/protocols/importing-network-from-table/#/)<br>
 This tutorial describes how to import a network from tabular data.
+
+#### Loading SIF files:
+Download galFiltered.sif. This sample file is also included with your Cytoscape installation, in the sampleData folder.
+Load the network via ``` File → Import → Network from File....```
+To see the whole network, select ``` View → Fit Content```.
+
+#### Loading XGMML files:
+XGMML is an XML format and can includes node and edge attributes as well as visual style properties. To learn more about the XGMML format, see the Cytoscape manual.
+
+```Go to File → Import → Network from URL.... ``` and enter the following ```URL: https://raw.githubusercontent.com/cytoscape/cytoscape-tutorials/gh-pages/protocols/data/BasicDataVizDemo.xgmml```
+This is the same network as in the previous step, but with node fill color corresponding to expression values.
