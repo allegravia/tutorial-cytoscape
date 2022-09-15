@@ -14,8 +14,16 @@ This tutorial is based on the Cytoscape [Loading Network Tutorial](https://cytos
 1. Before we start, install and launch the latest version of [Cytoscape](https://cytoscape.org/).
 2. Let's start with a high-level tour of the features of Cytoscape: [Tour of Cytoscape](https://cytoscape.org/cytoscape-tutorials/protocols/tour-of-cytoscape/#/)
 3. Then have a look at the cytoscape core concepts: [Introduction to Cytoscape](https://cytoscape.org/cytoscape-tutorials/presentations/modules/intro-cytoscape/index.html#/)
-4. What type of analyses can we do with Cytoscape? 
+4. What type of analyses can we do with Cytoscape? <br> 
+Here you will find a list of possible analyses you can do in biology using Cytoscape: [network analysis](https://github.com/cytoscape/cytoscape-tutorials/wiki#network-analysis)
+5. 
 
 ## Network data types
 
-## Loading networks
+## Loading networks and Tables
+- [Loading Networks](https://cytoscape.org/cytoscape-tutorials/protocols/loading-networks/#/) <br>
+This tutorial describes the details of importing an existing network and applying a layout.
+- [Importing Data From Tables](https://cytoscape.org/cytoscape-tutorials/protocols/importing-data-from-tables/#/)<br>
+This tutorial describes how to import expression data from a spreadsheet, and how to link it to already loaded networks.
+- [Importing Network From Table](https://cytoscape.org/cytoscape-tutorials/protocols/importing-network-from-table/#/)<br>
+This tutorial describes how to import a network from tabular data.
