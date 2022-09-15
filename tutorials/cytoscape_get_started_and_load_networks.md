@@ -19,6 +19,36 @@ Here you will find a list of possible analyses you can do in biology using Cytos
 5. 
 
 ## Network data types
+#### Cytoscape can import network data from:
+- Files (or URLs)
+- Excel, TSV, CSV
+- XGMML: eXtensible Graph Markup and Modelling Language
+- SBML: Systems Biology Markup Language
+- BioPAX
+- PSI-MI
+- SIF: Simple Interaction Format
+- GML: Graph Markup Language
+- ... and others depending on loaded Apps
+
+- Public repositories:
+  - PSICQUIC
+  - STRING (via the stringApp)
+  - IntAct (via the IntActApp)
+  - Reactome (via the ReactomeFI app)
+  - WikiPathways (via the WikiPathways app)
+  - Pathway Commons (via the CyPath2 app)
+  - NDEx
+- Automation:
+  - Command line scripts
+  - CyREST via R, Python, etc
+#### Cytoscape can load tables from:
+- Files (or URLs)
+  - Excel, TSV, CSV
+- Public repositories
+  - BioMart
+Automation:
+- Command line scripts
+- CyREST via R, Python, etc
 
 ## Loading networks and Tables
 - [Loading Networks](https://cytoscape.org/cytoscape-tutorials/protocols/loading-networks/#/) <br>
