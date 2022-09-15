@@ -46,9 +46,9 @@ Here you will find a list of possible analyses you can do in biology using Cytos
   - Excel, TSV, CSV
 - Public repositories
   - BioMart
-Automation:
-- Command line scripts
-- CyREST via R, Python, etc
+- Automation:
+  - Command line scripts
+  - CyREST via R, Python, etc
 
 ## Loading networks and Tables
 - [Loading Networks](https://cytoscape.org/cytoscape-tutorials/protocols/loading-networks/#/) <br>
