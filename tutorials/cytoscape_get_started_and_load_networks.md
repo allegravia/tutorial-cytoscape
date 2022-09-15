@@ -16,7 +16,6 @@ This tutorial is based on the Cytoscape [Loading Network Tutorial](https://cytos
 3. Then have a look at the cytoscape core concepts: [Introduction to Cytoscape](https://cytoscape.org/cytoscape-tutorials/presentations/modules/intro-cytoscape/index.html#/)
 4. What type of analyses can we do with Cytoscape? <br> 
 Here you will find a list of possible analyses you can do in biology using Cytoscape: [network analysis](https://github.com/cytoscape/cytoscape-tutorials/wiki#network-analysis)
-5. 
 
 ## Network data types
 #### Cytoscape can import network data from:
