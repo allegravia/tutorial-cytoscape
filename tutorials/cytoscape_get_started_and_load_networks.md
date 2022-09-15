@@ -57,8 +57,8 @@ SIF is a simple interaction format consisting of three columns of data: source, 
 To learn more about the SIF format, see the Cytoscape manual.
 
 Download galFiltered.sif. This sample file is also included with your Cytoscape installation, in the sampleData folder.
-Load the network via '''File → Import → Network from File....'''
-To see the whole network, select '''View → Fit Content'''.
+Load the network via ``` File → Import → Network from File....```
+To see the whole network, select ``` View → Fit Content```.
 
 ## Loading networks and Tables
 - [Loading Network Tutorial](https://cytoscape.org/cytoscape-tutorials/protocols/loading-networks/#/)
