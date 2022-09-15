@@ -1,6 +1,6 @@
 # Getting started, exploring network data and loading networks
 
-This tutorial is based on the Cytoscape [Loading Network Tutorial](https://cytoscape.org/cytoscape-tutorials/protocols/loading-networks/#/)
+This tutorial is based on [Cytoscape Tutorials](https://cytoscape.org/cytoscape-tutorials/)
 
 ## Table of content
 1. Install and launch Cytoscape
@@ -50,6 +50,7 @@ Here you will find a list of possible analyses you can do in biology using Cytos
   - CyREST via R, Python, etc
 
 ## Loading networks and Tables
+- [Loading Network Tutorial](https://cytoscape.org/cytoscape-tutorials/protocols/loading-networks/#/)
 - [Loading Networks](https://cytoscape.org/cytoscape-tutorials/protocols/loading-networks/#/) <br>
 This tutorial describes the details of importing an existing network and applying a layout.
 - [Importing Data From Tables](https://cytoscape.org/cytoscape-tutorials/protocols/importing-data-from-tables/#/)<br>
