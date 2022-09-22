@@ -28,7 +28,7 @@ Overall, the workflow will fo through the following points:
 
 ### Finding a set of differentially expressed miRNAs in a dataset of interest
 
-![Let's start with a set of miRNAs deregulated in breast cancer](https://github.com/allegravia/tutorial-cytoscape/blob/main/data/volcano_plot.svg)
+![Let's start with a set of miRNAs deregulated in breast cancer](https://github.com/allegravia/tutorial-cytoscape/blob/main/data/images/volcano_plot.svg)
 ---
 
 ### Integration and visualization of experimental data in the MTI network
