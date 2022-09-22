@@ -3,3 +3,4 @@
 ### Tutorial 2: Network analysis and manipulation
 ### Tutorial 3: Assessing expression data using networks
 ### Tutorial 4: Analysing PPI data neworks
+### Tutorial 5: Integrating MTI networks with DE miRNA data
