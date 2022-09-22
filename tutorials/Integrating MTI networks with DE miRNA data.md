@@ -14,14 +14,20 @@ Overall, the workflow will fo through the following points:
 
 ### Loading a network of validated miRNA-target interactions (MTI) derived from public databases
 
+Experimentally validated miRNA-target interactions were downloaded from [miRTarBase](https://mirtarbase.cuhk.edu.cn/) (release 8.0), and then filtered from bash command line to remove *weak* interactions (**--> how would you do that?**).  
+![Sample lines from file of human miRNA-target data obtained from miRTarbase, release 8.0](https://github.com/allegravia/tutorial-cytoscape/blob/main/data/images/miRTarBase_screenshot.png)
+
+
 - launch Cytoscape
 - download network file: [**hsa_MTI__strong.csv**] (https://github.com/allegravia/tutorial-cytoscape/blob/main/data/hsa_MTI__strong.csv)
-- import the file to create a network using File → Import → Network from File
-    This will bring up the Import Network From Table dialog.
+- import the file to create a network using **File → Import → Network from File** (This will bring up the Import Network From Table dialog).
         Click on Select None to disable all columns.
-        Click only on the GeneName column and set this column as the Source Node column (green circle).
-        Click OK. You’ll see a warning about no edges, but that’s OK. This will create a grid of 1500 unconnected nodes, where each node represents a gene.
-
+        Click on the *miRNA* column and set this column as the *Source Node* column (green circle).
+        Click on the *Target gene* column and set this column as the *Target Node* column (red target).
+        Click on the *Experiments* column and set this column as the *Interaction type* column (purple arrow).
+        Click OK.This will create a network of 3589 nodes and 11170 edges, where each node represents either a miRNA or a target gene.
+        
+![human MTI network](https://github.com/allegravia/tutorial-cytoscape/blob/main/data/images/volcano_plot.svg)
 
 
 ---
