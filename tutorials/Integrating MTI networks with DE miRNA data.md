@@ -44,6 +44,14 @@ After running in R a differential expression analysis, over 400 miRNA precursors
 
 ### Integration and visualization of experimental data in the MTI network
 
+- download results from the analysis of miRNA differential expression in breast cancer, that is stored in file: [**TCGA_BRCA_mirs__DEoutput__wMiRBaseAnnotations.txt**] (https://github.com/allegravia/tutorial-cytoscape/blob/main/data/TCGA_BRCA_mirs__DEoutput__wMiRBaseAnnotations.txt)
+- import the file as a network using **File → Import → Network from File** (This will bring up the Import Network From Table dialog).
+        Click on Select None to disable all columns.
+        Click on the *miRNA* column and set this column as the *Source Node* column (green circle).
+        Click on the *Target gene* column and set this column as the *Target Node* column (red target).
+        Click on the *Experiments* column and set this column as the *Interaction type* column (purple arrow).
+        Click OK.This will create a network of 3589 nodes and 11170 edges, where each node represents either a miRNA or a target gene.
+
 ---
 
 ### Network filtering based on significance level from differential expression testing
