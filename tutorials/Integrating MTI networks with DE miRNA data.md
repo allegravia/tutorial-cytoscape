@@ -47,8 +47,7 @@ After running in R a differential expression analysis, over 400 miRNA precursors
 - download results from the analysis of miRNA differential expression in breast cancer, that is stored in file: [**TCGA_BRCA_mirs__DEoutput__wMiRBaseAnnotations.txt**] (https://github.com/allegravia/tutorial-cytoscape/blob/main/data/TCGA_BRCA_mirs__DEoutput__wMiRBaseAnnotations.txt)
 - import the file as node table columns by using **File → Import → Table from File** (This will bring up the Import Columns From Table dialog).
             Click on the *miRNA.name* column and set this column as the *key* column (this column will be used to map annotations to network nodes).
-            It turns out that all of the defaults are correct for just importing the data, so click on OK.
-            This will import all of the data in the spreadsheet and associate each row with the corresponding node.
+            Click on OK. This will import all of the data in the spreadsheet and associate each row with the corresponding node.
             You should be able to see this in the Table Panel (bottom right panel, below network view).
 
 
