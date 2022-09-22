@@ -12,18 +12,28 @@ Overall, the workflow will fo through the following points:
 
 ---
 
-# Loading a network of validated miRNA-target interactions (MTI) derived from public databases
+### Loading a network of validated miRNA-target interactions (MTI) derived from public databases
 
 ---
 
-# Finding a set of differentially expressed miRNAs in a dataset of interest
-
----
-
-# Integration and visualization of experimental data in the MTI network
-
----
-
-# Network filtering based on significance level from differential expression testing
+### Finding a set of differentially expressed miRNAs in a dataset of interest
 
 ![Let's start with a set of miRNAs deregulated in breast cancer](https://github.com/allegravia/tutorial-cytoscape/blob/main/data/volcano_plot.svg)
+---
+
+### Integration and visualization of experimental data in the MTI network
+
+---
+
+### Network filtering based on significance level from differential expression testing
+
+---
+
+### Network functional enrichment analysis on selected target nodes
+
+---
+
+### Basic Network analysis
+
+
+
