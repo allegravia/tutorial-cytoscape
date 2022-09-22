@@ -15,6 +15,7 @@ Overall, the workflow will fo through the following points:
 ### Loading a network of validated miRNA-target interactions (MTI) derived from public databases
 
 Experimentally validated miRNA-target interactions were downloaded from [miRTarBase](https://mirtarbase.cuhk.edu.cn/) (release 8.0), and then filtered from bash command line to remove *weak* interactions (**--> how would you do that?**).  
+
 ![Sample lines from file of human miRNA-target data obtained from miRTarbase, release 8.0](https://github.com/allegravia/tutorial-cytoscape/blob/main/data/images/f.png)
 
 
@@ -27,7 +28,6 @@ Experimentally validated miRNA-target interactions were downloaded from [miRTarB
         Click on the *Experiments* column and set this column as the *Interaction type* column (purple arrow).
         Click OK.This will create a network of 3589 nodes and 11170 edges, where each node represents either a miRNA or a target gene.
         
-
 
 ---
 
