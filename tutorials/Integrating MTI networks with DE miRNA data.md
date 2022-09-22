@@ -15,7 +15,7 @@ Overall, the workflow will fo through the following points:
 ### Loading a network of validated miRNA-target interactions (MTI) derived from public databases
 
 - launch Cytoscape
-- download network file: 
+- download network file: [hsa_MTI__strong.csv] (https://github.com)/allegravia/tutorial-cytoscape/blob/main/data/hsa_MTI__strong.csv)
 - import the file to create a network using File → Import → Network from File
     This will bring up the Import Network From Table dialog.
         Click on Select None to disable all columns.
