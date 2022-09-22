@@ -14,6 +14,16 @@ Overall, the workflow will fo through the following points:
 
 ### Loading a network of validated miRNA-target interactions (MTI) derived from public databases
 
+- launch Cytoscape
+- download network file: 
+- import the file to create a network using File → Import → Network from File
+    This will bring up the Import Network From Table dialog.
+        Click on Select None to disable all columns.
+        Click only on the GeneName column and set this column as the Source Node column (green circle).
+        Click OK. You’ll see a warning about no edges, but that’s OK. This will create a grid of 1500 unconnected nodes, where each node represents a gene.
+
+
+
 ---
 
 ### Finding a set of differentially expressed miRNAs in a dataset of interest
