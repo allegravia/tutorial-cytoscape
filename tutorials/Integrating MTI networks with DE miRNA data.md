@@ -6,7 +6,7 @@ Overall, the workflow will fo through the following points:
     - Loading a network of validated miRNA-target interactions (MTI) derived from public databases
     - Finding a set of differentially expressed miRNAs in a dataset of interest
     - Integration and visualization of experimental data in the MTI network
-    - Network filtering based on significance level from test of differential expression
+    - Network filtering based on differential expression significance level and log-fold change
     - Network functional enrichment analysis on selected target nodes
     - Basic Network analysis
 
@@ -50,18 +50,11 @@ After running in R a differential expression analysis, over 400 miRNA precursors
             Click on OK. This will import all of the data in the spreadsheet and associate each row with the corresponding node.
             You should be able to see this in the Table Panel (bottom right panel, below network view).
 
-
-
-We’ll use the Select tab in the Control Panel to find the significant overall expression changes.
-
-    Open the Select tab and click on the + button to add a new condition. In this case we’re going to add a Column Filter. Select the "Mean log2FC" column and set the values to be between -5 and -1. This will select all genes that are significantly underexpressed on average, across all samples (only one gene should be selected).
-    Repeat the same process as above, but set the values to be between 1 and 5. You’ll also need to change the type of match (at the top of the panel) to Match any (OR). No additional genes will be selected in this case (but this approach will be reused later).
-
-Only one gene shows significant average expression changes across all samples, RPS4Y1, a ribosomal protein that has been shown to be linked to glioblastoma, but it’s still a relatively unsatisfying result that only a single protein changes expression in glioblastoma patients. A closer examination might be in order...
-
+- recalling methods learned in this cytoscape tutorial on [**[Basic Data Visualization](https://cytoscape.org/cytoscape-tutorials/protocols/basic-data-visualization/#/) from [Cytoscape GitHub website](https://github.com/cytoscape/cytoscape-tutorials).**], modify your network view as follows:
+- 
 ---
 
-### Network filtering based on significance level from differential expression testing
+### Network filtering based on differential expression significance level and log-fold change
 
 ---
 
