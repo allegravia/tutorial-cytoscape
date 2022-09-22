@@ -12,4 +12,4 @@ Overall, the workflow will fo through the following points:
 
 
 
-![Let's start with a set of miRNAs deregulated in breast cancer](https://drive.google.com/file/d/1_oY_OSwCHY670NiFKR4JLP9lH1rzWOVN/view?usp=sharing)
+![Let's start with a set of miRNAs deregulated in breast cancer](https://github.com/allegravia/tutorial-cytoscape/blob/main/data/volcano_plot.svg)
