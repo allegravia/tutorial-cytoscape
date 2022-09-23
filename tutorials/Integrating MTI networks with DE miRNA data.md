@@ -87,12 +87,15 @@ Now, your turn:
 
 ### Network functional enrichment analysis on selected target nodes
 
-Let's explore which pathways are more relevant in breast cancer deregulation based on functional enrichment analysis of functional target genes of top deregulated miRNAs. There are many tools available in Cytoscape to perform functional enrichment. Here we will use the built-in functional enrichment available from the stringApp.
+Let's explore which pathways are more relevant in breast cancer deregulation based on functional enrichment analysis of functional target genes of top deregulated miRNAs. There are many tools available in Cytoscape to perform functional enrichment. Here we will use the built-in functional enrichment available from the *stringApp*, as illustrated in [this cytoscape tutorial on functional enrichment analysis](https://cytoscape.org/cytoscape-tutorials/protocols/functional-enrichment/index.html#/24):
+
+- Set network as a STRING network. In order to retrieve the function enrichment scores the stringApp needs to be told that this is a STRING network. A menu item is available for that purpose: Apps → STRING → STRINGify network (→ column to use "name"; species: "Homo sapiens").
+- Retrieve retrieve the functional enrichment through the Apps → STRING → Retrieve functional enrichment. This will bring up a new Table Panel tab for “STRING Enrichment”.
+There is a filter icon which bring up a menu to switch the ontology or pathway displayed. In the case of the largest component, we see that there is a significant overexpression of genes involved in the GO Biological Processes: extracellular matrix organization, collagen catabolic process, and other development processes; they are also associated with the KEGG pathways Protein digestion and absorption and ECM-receptor interaction.
+Repeat for other components.
 
 
-
-
-- Select protein-coding nodes by using 
+- Select protein-coding nodes by using again the Filter menu and setting a filter on the *gene_type* column to be "protein_coding"
 
 ---
 
