@@ -34,7 +34,7 @@ Experimentally validated miRNA-target interactions were downloaded from [miRTarB
 
 ### Finding a set of differentially expressed miRNAs in a dataset of interest
 
-In this tutorial, we will use miRNA expression data obtained by high-throughput sequencing technology in breast cancer samples and normal tissues from The Cancer Genome Atlas (TCGA) project.
+In this tutorial, we will use miRNA expression data obtained by high-throughput sequencing technology in breast cancer samples and normal tissues from ![The Cancer Genome Atlas (TCGA) program](https://www.cancer.gov/about-nci/organization/ccg/research/structural-genomics/tcga).
 
 Pre-processed data (Reads per million mapped reads, or RPM-normalized read counts across samples) was obtained by using the R/Bioconductor package [*curatedTCGAData*](https://bioconductor.org/packages/release/data/experiment/vignettes/curatedTCGAData/inst/doc/curatedTCGAData.html). **Important: expression data are summarized here at the hairpin level!**, thus one will need mapping of hairpins to mature miRNAs to integrate expression data with the above MTI network (**--> how would you do that?**).  
 
@@ -73,7 +73,7 @@ After running in R a differential expression analysis, over 400 miRNA precursors
 
 Now we will use information gained from expression data analysis, such as significance observed in the differential expression test and log fold-change of expression level in breast cancer samples compared to normal samples, to select a subnetwork of miRNA-target interactions likely relevant to investigate disregulated pathways in breast cancer disease.
 
-To this end, use the **FIlter** tab from the Control Panel (left menu) to find the most significant overall expression changes, as follows:
+To this end, use the **Filter** tab from the Control Panel (left menu) to find the most significant overall expression changes, as follows:
 
     - Open the Filter tab and click on the + button to add a new condition. In this case we’re going to add a Column Filter. Select the "BH.adjusted_pvalues" column and set the values to be between 0.0 and 0.049 (in other words, select BH adjusted p-values < 0.05). This will select all miRNAs (only miRNAs in this network have associated expression data!) that are significantly deregulated in breast cancer, based on the choosen significance threshold. By applying this filter, you will read (bottom of FIlter panel) that 406 nodes have been selected, and you will see selected nodes highlighted in yellow in the network view.
     
