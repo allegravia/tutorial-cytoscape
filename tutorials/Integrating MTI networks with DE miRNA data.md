@@ -103,8 +103,11 @@ Finally, let's analyse the last sub-network (*sig_and_topDEmiRNAs*) to identify 
 - Deselect all nodes by using **Select → Nodes → Deselect All Nodes**. This is to ensure that we run the network analysis on all nodes and components.
 - RUn the network analysis by using **Tools → Analyze network** (→ check the option: *Analyze as directed graph* from the pop-up window).
 
+
 **which miRNAs are the top 5 hubs in this networks?**
+
 **which column would you look at to find out top co-regulated target genes in this networks?**
+
 **Is this a scale-free network? How can you tell?**
 
 ---
