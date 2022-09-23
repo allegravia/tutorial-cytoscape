@@ -52,8 +52,9 @@ After running in R a differential expression analysis, over 400 miRNA precursors
             You should be able to see this in the Table Panel (bottom right panel, below network view).
 
 - recalling methods learned in this cytoscape tutorial on [**[Basic Data Visualization](https://cytoscape.org/cytoscape-tutorials/protocols/basic-data-visualization/#/) from [Cytoscape GitHub website](https://github.com/cytoscape/cytoscape-tutorials).**], modify your network view as follows:
-            + map (miRNA) expression values to the Node Fill Color, so that nodes with low expression will be colored blue, while nodes with high expression will be colored red.
-            + map significance for expression values to Node Border Width, so that nodes with significant changes will appear with a thicker border.
+
+     - map (miRNA) expression values to the **Node Fill Color**, so that nodes with low expression will be colored blue, while nodes with high expression will be colored red.
+     - map significance for expression values to **Node Border Width**, so that nodes with significant changes will appear with a thicker border.
 ---
 
 ### Integration of node annotation from public databases
