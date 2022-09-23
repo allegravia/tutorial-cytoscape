@@ -90,7 +90,7 @@ Now, your turn:
 
 Let's explore which biological processes are mostly affected in breast cancer deregulation based on functional enrichment analysis of genes targeted by  top deregulated miRNAs. There are many tools available in Cytoscape to perform functional enrichment. Here we will use for simplicity the built-in functional enrichment available from the *BINGO* App:
 - Select protein-coding nodes by using again the Filter menu and setting a filter on the *gene_type* column to be "protein_coding"
-- Launch functional enrichment analysis by using: **Apps → BINGO** (→ set cluster name - this will be used to save results on your pc, directory to save the results of functional enrichment analysis, and change organism to Homo sapiens. THen click on *Start Bingo*).
+- Launch functional enrichment analysis by using: **Apps → BINGO** (→ set cluster name - this will be used to save results on your pc, directory to save the results of functional enrichment analysis, and change organism to Homo sapiens. THen click on *Start BINGO*).
 
 **which biological processes would you say are mostly affected in breast cancer pathogenesis based on functional enrichment analysis?**
 
