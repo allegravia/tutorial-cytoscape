@@ -78,16 +78,19 @@ To this end, use the **FIlter** tab from the Control Panel (left menu) to find t
     
     - Select the first neighbors of selected miRNA nodes by using **Select → Nodes → First neighbors of selected nodes → Directed outgoing**. This will select all target genes of the subsets of differentially expressed miRNAs that we just selected based on test p-value.
     
-    - Create a separate subnetwork from these selected nodes (ie. DE miRNAs and their experimentally validated target genes) by using **File → New Network  → from selected nodes, all edges**. This will create a new network in the left panel of 2783 nodes and 8002 edges. Rename this sub-network "topDEmiRNAs".
+    - Create a separate subnetwork from these selected nodes (ie. DE miRNAs and their experimentally validated target genes) by using **File → New Network  → from selected nodes, all edges**. This will create a new network in the left panel of 2783 nodes and 8002 edges. Rename this sub-network "sig_miRNAs".
     
 Now, your turn: 
-    - create a sub-sub-network from the *topDEmiRNAs* network by modifying the above filtering procedure to now select only miRNAs whose values of log-fold-change are at least 1 (or -1), or more extreme. (Hint: design your filter based on appropriate values of the "log2FC").
+    - create a sub-sub-network from the *topDEmiRNAs* network by modifying the above filtering procedure to now select only miRNAs whose values of log-fold-change are at least 1 (or -1), or more extreme. Create a new network also including direct target genes of the selected miRNAs. (Hint: design your filter based on appropriate values of the "log2FC"). Name this sub-sub-network *sig_and_topDEmiRNAs*.
     
 ---
 
 ### Network functional enrichment analysis on selected target nodes
 
-Let's explore which pathways are more relevant in breast cancer deregulation based on functional enrichment analysis of functional target genes of top deregulated miRNAs. To run a functional enrichment analysis:
+Let's explore which pathways are more relevant in breast cancer deregulation based on functional enrichment analysis of functional target genes of top deregulated miRNAs. There are many tools available in Cytoscape to perform functional enrichment. Here we will use the built-in functional enrichment available from the stringApp.
+
+
+
 
 - Select protein-coding nodes by using 
 
