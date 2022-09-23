@@ -87,19 +87,25 @@ Now, your turn:
 
 ### Network functional enrichment analysis on selected target nodes
 
-Let's explore which pathways are more relevant in breast cancer deregulation based on functional enrichment analysis of functional target genes of top deregulated miRNAs. There are many tools available in Cytoscape to perform functional enrichment. Here we will use the built-in functional enrichment available from the *stringApp*, as illustrated in [this cytoscape tutorial on functional enrichment analysis](https://cytoscape.org/cytoscape-tutorials/protocols/functional-enrichment/index.html#/24):
-
-- Set network as a STRING network. In order to retrieve the function enrichment scores the stringApp needs to be told that this is a STRING network. A menu item is available for that purpose: Apps → STRING → STRINGify network (→ column to use "name"; species: "Homo sapiens").
-- Retrieve retrieve the functional enrichment through the Apps → STRING → Retrieve functional enrichment. This will bring up a new Table Panel tab for “STRING Enrichment”.
-There is a filter icon which bring up a menu to switch the ontology or pathway displayed. In the case of the largest component, we see that there is a significant overexpression of genes involved in the GO Biological Processes: extracellular matrix organization, collagen catabolic process, and other development processes; they are also associated with the KEGG pathways Protein digestion and absorption and ECM-receptor interaction.
-Repeat for other components.
-
-
+Let's explore which biological processes are mostly affected in breast cancer deregulation based on functional enrichment analysis of genes targeted by  top deregulated miRNAs. There are many tools available in Cytoscape to perform functional enrichment. Here we will use for simplicity the built-in functional enrichment available from the *BINGO* App:
 - Select protein-coding nodes by using again the Filter menu and setting a filter on the *gene_type* column to be "protein_coding"
+- Launch functional enrichment analysis by using: **Apps → BINGO** (→ set cluster name - this will be used to save results on your pc, directory to save the results of functional enrichment analysis, and change organism to Homo sapiens. THen click on *Start Bingo*).
+
+**which biological processes would you say are mostly affected in breast cancer pathogenesis based on functional enrichment analysis?**
+
 
 ---
 
 ### Basic Network analysis
 
+Finally, let's analyse the last sub-network (*sig_and_topDEmiRNAs*) to identify hub nodes, both miRNA and target gene nodes, in this network. We can do that as follows:
 
+- Deselect all nodes by using **Select → Nodes → Deselect All Nodes**. This is to ensure that we run the network analysis on all nodes and components.
+- RUn the network analysis by using **Tools → Analyze network** (→ check the option: *Analyze as directed graph* from the pop-up window).
+
+**which miRNAs are the top 5 hubs in this networks?**
+**which column would you look at to find out top co-regulated target genes in this networks?**
+**Is this a scale-free network? How can you tell?**
+
+---
 
