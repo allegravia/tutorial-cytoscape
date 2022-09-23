@@ -6,6 +6,7 @@ Overall, the workflow will fo through the following points:
     - Loading a network of validated miRNA-target interactions (MTI) derived from public databases
     - Finding a set of differentially expressed miRNAs in a dataset of interest
     - Integration and visualization of experimental data in the MTI network
+    - Integration of node annotations from public databases
     - Network filtering based on differential expression significance level and log-fold change
     - Network functional enrichment analysis on selected target nodes
     - Basic Network analysis
@@ -51,8 +52,22 @@ After running in R a differential expression analysis, over 400 miRNA precursors
             You should be able to see this in the Table Panel (bottom right panel, below network view).
 
 - recalling methods learned in this cytoscape tutorial on [**[Basic Data Visualization](https://cytoscape.org/cytoscape-tutorials/protocols/basic-data-visualization/#/) from [Cytoscape GitHub website](https://github.com/cytoscape/cytoscape-tutorials).**], modify your network view as follows:
-- 
+            + map (miRNA) expression values to the Node Fill Color, so that nodes with low expression will be colored blue, while nodes with high expression will be colored red.
+            + map significance for expression values to Node Border Width, so that nodes with significant changes will appear with a thicker border.
 ---
+
+### Integration of node annotation from public databases
+
+- download annotations on gene biotype obtained from Ensembl [BioMart](https://www.ensembl.org/biomart/martview/), and stored in file: [**nodes2type.txt**] (https://github.com/allegravia/tutorial-cytoscape/blob/main/data/nodes2type.txt)
+- import the file as node table columns by using **File → Import → Table from File**.
+            All of the defaults should be correct for importing the data, so just click on OK.
+            This will import all of the data in the spreadsheet and associate each row with the corresponding node.
+            Again, you should be able to see the new annotation column added in the spreadsheet shown in the Table Panel.
+            
+- map gene type to the Node Shape, so that miRNA nodes will appear with a diamond shape, protein-coding nodes with a rectangular shape, and lncRNAs as parallelograms. Finally, set hexagon as the default node shape.
+
+---
+
 
 ### Network filtering based on differential expression significance level and log-fold change
 
