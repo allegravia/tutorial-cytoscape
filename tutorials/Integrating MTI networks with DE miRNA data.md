@@ -64,16 +64,32 @@ After running in R a differential expression analysis, over 400 miRNA precursors
             This will import all of the data in the spreadsheet and associate each row with the corresponding node.
             Again, you should be able to see the new annotation column added in the spreadsheet shown in the Table Panel.
             
-- map gene type to the Node Shape, so that miRNA nodes will appear with a diamond shape, protein-coding nodes with a rectangular shape, and lncRNAs as parallelograms. Finally, set hexagon as the default node shape.
+- map gene type to the Node Shape, so that miRNA nodes (that is, *miRNA_name* gene type!) will appear with a diamond shape, protein-coding nodes with a rectangular shape, and lncRNAs as parallelograms. Finally, set hexagon as the default node shape.
 
 ---
-
 
 ### Network filtering based on differential expression significance level and log-fold change
 
+Now we will use information gained from expression data analysis, such as significance observed in the differential expression test and log fold-change of expression level in breast cancer samples compared to normal samples, to select a subnetwork of miRNA-target interactions likely relevant to investigate disregulated pathways in breast cancer disease.
+
+To this end, use the **FIlter** tab from the Control Panel (left menu) to find the most significant overall expression changes, as follows:
+
+    - Open the Filter tab and click on the + button to add a new condition. In this case we’re going to add a Column Filter. Select the "BH.adjusted_pvalues" column and set the values to be between 0.0 and 0.049 (in other words, select BH adjusted p-values < 0.05). This will select all miRNAs (only miRNAs in this network have associated expression data!) that are significantly deregulated in breast cancer, based on the choosen significance threshold. By applying this filter, you will read (bottom of FIlter panel) that 406 nodes have been selected, and you will see selected nodes highlighted in yellow in the network view.
+    
+    - Select the first neighbors of selected miRNA nodes by using **Select → Nodes → First neighbors of selected nodes → Directed outgoing**. This will select all target genes of the subsets of differentially expressed miRNAs that we just selected based on test p-value.
+    
+    - Create a separate subnetwork from these selected nodes (ie. DE miRNAs and their experimentally validated target genes) by using **File → New Network  → from selected nodes, all edges**. This will create a new network in the left panel of 2783 nodes and 8002 edges. Rename this sub-network "topDEmiRNAs".
+    
+Now, your turn: 
+    - create a sub-sub-network from the *topDEmiRNAs* network by modifying the above filtering procedure to now select only miRNAs whose values of log-fold-change are at least 1 (or -1), or more extreme. (Hint: design your filter based on appropriate values of the "log2FC").
+    
 ---
 
 ### Network functional enrichment analysis on selected target nodes
+
+Let's explore which pathways are more relevant in breast cancer deregulation based on functional enrichment analysis of functional target genes of top deregulated miRNAs. To run a functional enrichment analysis:
+
+- Select protein-coding nodes by using 
 
 ---
 
