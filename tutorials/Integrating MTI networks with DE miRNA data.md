@@ -1,7 +1,7 @@
 ## Tutorial: Integrating miRNA-target gene networks with transcriptomics data
 
 This tutorial describes a network analysis workflow in Cytoscape for integrating miRNA expression data in a network of miRNA-target interactions (MTI).
-Overall, the workflow will fo through the following points:
+Overall, the workflow will go through the following points:
 
     - Loading a network of validated miRNA-target interactions (MTI) derived from public databases
     - Finding a set of differentially expressed miRNAs in a dataset of interest
