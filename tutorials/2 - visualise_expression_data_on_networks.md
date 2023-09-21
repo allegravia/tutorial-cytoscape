@@ -12,4 +12,4 @@ You can find the Tutorial here: [Cytoscape Basic Data Visualization Tutorial](ht
 
 In the tutorial you will need to import the GAL1 GAL4 GAL80 interaction network and expression data data from a table. To this aim, you may find it useful the following Cytoscape tutorials:
 - Importing networks: see [Cytoscape Loading Networks Tutorial](https://cytoscape.org/cytoscape-tutorials/protocols/loading-networks/#/)
-- Importing data from tables: see [Cytoscape Importing Data From Tables Tutorial](https://cytoscape.org/cytoscape-tutorials/protocols/importing-data-from-tables/#/)
+- Importing data from tables: see [Cytoscape Importing Data From Tables Tutorial](https://cytoscape.org/cytoscape-tutorials/protocols/importing-data-from-tables/#/).
