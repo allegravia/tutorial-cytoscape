@@ -5,7 +5,7 @@ and then progressing to the integration of this network with valuable informatio
 Overall, the workflow will go through the following points:
 
     - Loading a network of validated miRNA-target interactions (MTI) derived from public databases
-    - Finding a set of differentially expressed miRNAs in a dataset of interest
+    - Filtering on a set of differentially expressed miRNAs in the dataset of interest
     - Integration and visualization of experimental data in the MTI network
     - Integration of node annotations from public databases
     - Network filtering based on differential expression significance level and log-fold change
@@ -21,8 +21,8 @@ Experimentally validated miRNA-target interactions were downloaded from [miRTarB
 ![Sample lines from file of human miRNA-target data obtained from miRTarbase, release 8.0](https://github.com/allegravia/tutorial-cytoscape/blob/main/data/images/f.png)
 
 
+- download network file: [**hsa_MTI__strong.csv**] (https://github.com/allegravia/tutorial-cytoscape/blob/main/data/hsa_MTI__strong.csv). To this end, you will have to hit the "download raw file" icon from the right menu
 - launch Cytoscape
-- download network file: [**hsa_MTI__strong.csv**] (https://github.com/allegravia/tutorial-cytoscape/blob/main/data/hsa_MTI__strong.csv)
 - import the file to create a network using **File → Import → Network from File** (This will bring up the Import Network From Table dialog).
         Click on Select None to disable all columns.
         Click on the *miRNA* column and set this column as the *Source Node* column (green circle).
@@ -33,9 +33,9 @@ Experimentally validated miRNA-target interactions were downloaded from [miRTarB
 
 ---
 
-### Finding a set of differentially expressed miRNAs in a dataset of interest
+### Filtering on a set of differentially expressed miRNAs in the dataset of interest
 
-In this tutorial, we will use miRNA expression data obtained by high-throughput sequencing technology in breast cancer samples and normal tissues from ![The Cancer Genome Atlas (TCGA) program](https://www.cancer.gov/about-nci/organization/ccg/research/structural-genomics/tcga).
+In this tutorial, to filter our MTI network and limit it to interactions involving miRNAs that are differentially expressed (DE) in cancer, we will use a list of miRNAs found to be DE based on the analysis of expression data obtained by high-throughput sequencing technology in breast cancer samples and normal tissues from ![The Cancer Genome Atlas (TCGA) program](https://www.cancer.gov/about-nci/organization/ccg/research/structural-genomics/tcga).
 
 Pre-processed data (Reads per million mapped reads, or RPM-normalized read counts across samples) was obtained by using the R/Bioconductor package [*curatedTCGAData*](https://bioconductor.org/packages/release/data/experiment/vignettes/curatedTCGAData/inst/doc/curatedTCGAData.html). **Important: expression data are summarized here at the hairpin level!**, thus one will need mapping of hairpins to mature miRNAs to integrate expression data with the above MTI network (**--> how would you do that?**).  
 
