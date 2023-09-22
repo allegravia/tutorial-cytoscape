@@ -35,7 +35,13 @@ Experimentally validated miRNA-target interactions were downloaded from [miRTarB
 
 ### Filtering on a set of differentially expressed miRNAs in the dataset of interest
 
-In this tutorial, to filter our MTI network and limit it to interactions involving miRNAs that are differentially expressed (DE) in cancer, we will use a list of miRNAs found to be DE based on the analysis of expression data obtained by high-throughput sequencing technology in breast cancer samples and normal tissues from ![The Cancer Genome Atlas (TCGA) program](https://www.cancer.gov/about-nci/organization/ccg/research/structural-genomics/tcga).
+In this tutorial, we will filter our MTI network and focus on interactions involving miRNAs that exhibit differential expression (DE) in cancer. To achieve this, we will utilize a list of miRNAs identified as DE through the analysis of expression data obtained from high-throughput sequencing technology in breast cancer samples and normal tissues, sourced from  ![The Cancer Genome Atlas (TCGA) program](https://www.cancer.gov/about-nci/organization/ccg/research/structural-genomics/tcga).
+
+- download DE miRNAs file: [**hsa_MTI__strong.csv**] (https://github.com/allegravia/tutorial-cytoscape/blob/main/data/hsa_MTI__strong.csv). To this end, you will have to hit the "download raw file" icon from the right menu
+
+
+
+# NOTE: The following lines, which are not covered in today's tutorial (thus, we will not execute them), explain how to obtain the list of differentially expressed miRNAs that we used to filter our network. This is meant to foster your curiosity. As for now, jump straight to the next task.
 
 Pre-processed data (Reads per million mapped reads, or RPM-normalized read counts across samples) was obtained by using the R/Bioconductor package [*curatedTCGAData*](https://bioconductor.org/packages/release/data/experiment/vignettes/curatedTCGAData/inst/doc/curatedTCGAData.html). **Important: expression data are summarized here at the hairpin level!**, thus one will need mapping of hairpins to mature miRNAs to integrate expression data with the above MTI network (**--> how would you do that?**).  
 
