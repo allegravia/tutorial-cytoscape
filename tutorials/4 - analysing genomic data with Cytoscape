@@ -38,6 +38,15 @@ Experimentally validated miRNA-target interactions were downloaded from [miRTarB
 In this tutorial, we will filter our MTI network and focus on interactions involving miRNAs that exhibit differential expression (DE) in cancer. To achieve this, we will utilize a list of miRNAs identified as DE through the analysis of expression data obtained from high-throughput sequencing technology in breast cancer samples and normal tissues, sourced from  ![The Cancer Genome Atlas (TCGA) program](https://www.cancer.gov/about-nci/organization/ccg/research/structural-genomics/tcga).
 
 - download results from the analysis of miRNA differential expression in breast cancer, that is stored in file: [**TCGA_BRCA_mirs__DEoutput__wMiRBaseAnnotations.txt**] (https://github.com/allegravia/tutorial-cytoscape/blob/main/data/TCGA_BRCA_mirs__DEoutput__wMiRBaseAnnotations.txt)
+- import the file as node table columns by using **File → Import → Table from File** (This will bring up the Import Columns From Table dialog).
+            Click on the *miRNA.name* column and set this column as the *key* column (this column will be used to map annotations to network nodes).
+            Click on OK. This will import all of the data in the spreadsheet and associate each row with the corresponding node.
+            You should be able to see this in the Table Panel (bottom right panel, below network view).
+
+- recalling methods learned in this cytoscape tutorial on [**[Basic Data Visualization](https://cytoscape.org/cytoscape-tutorials/protocols/basic-data-visualization/#/) from [Cytoscape GitHub website](https://github.com/cytoscape/cytoscape-tutorials).**], modify your network view as follows:
+
+     - map (miRNA) log fold change in breast cancer to the **Node Fill Color**, so that nodes with lower expression in breast cancer compared to normal samples will be colored blue, while nodes with higher cancer expression will be colored red.
+     - map significance for expression values to **Node Border Width**, so that nodes with significant changes will appear with a thicker border.
 
 
 
@@ -53,15 +62,6 @@ After running in R a differential expression analysis, over 400 miRNA precursors
 ### Integration and visualization of experimental data in the MTI network
 
 - download results from the analysis of miRNA differential expression in breast cancer, that is stored in file: [**TCGA_BRCA_mirs__DEoutput__wMiRBaseAnnotations.txt**] (https://github.com/allegravia/tutorial-cytoscape/blob/main/data/TCGA_BRCA_mirs__DEoutput__wMiRBaseAnnotations.txt)
-- import the file as node table columns by using **File → Import → Table from File** (This will bring up the Import Columns From Table dialog).
-            Click on the *miRNA.name* column and set this column as the *key* column (this column will be used to map annotations to network nodes).
-            Click on OK. This will import all of the data in the spreadsheet and associate each row with the corresponding node.
-            You should be able to see this in the Table Panel (bottom right panel, below network view).
-
-- recalling methods learned in this cytoscape tutorial on [**[Basic Data Visualization](https://cytoscape.org/cytoscape-tutorials/protocols/basic-data-visualization/#/) from [Cytoscape GitHub website](https://github.com/cytoscape/cytoscape-tutorials).**], modify your network view as follows:
-
-     - map (miRNA) log fold change in breast cancer to the **Node Fill Color**, so that nodes with lower expression in breast cancer compared to normal samples will be colored blue, while nodes with higher cancer expression will be colored red.
-     - map significance for expression values to **Node Border Width**, so that nodes with significant changes will appear with a thicker border.
 ---
 
 ### Integration of node annotation from public databases
