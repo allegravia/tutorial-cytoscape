@@ -44,20 +44,18 @@ Integrated data will be later used to focus on interactions involving miRNAs tha
 - Click on the *miRNA.name* column and set this column as the *key* column (this column will be used to map annotations to network nodes).
 - Click on OK. This will import all of the data in the spreadsheet and associate each row with the corresponding node. (Check import results in the Node Table Panel - that is the bottom right panel, below network view).
 
-#1115 Do all nodes in the network have values in the logFC column shown in the Node Table panel? Why?
+**#1115 Do all nodes in the network have values in the logFC column shown in the Node Table panel? Why?**
 
-- recalling methods learned in this cytoscape tutorial on [**[Basic Data Visualization](https://cytoscape.org/cytoscape-tutorials/protocols/basic-data-visualization/#/) from [Cytoscape GitHub website](https://github.com/cytoscape/cytoscape-tutorials).**], modify your network view as follows:
+---
+
+### Adjust network style
+
+Recalling methods learned in this cytoscape tutorial on [**[Basic Data Visualization](https://cytoscape.org/cytoscape-tutorials/protocols/basic-data-visualization/#/) from [Cytoscape GitHub website](https://github.com/cytoscape/cytoscape-tutorials).**], modify your network view as follows:
 
      - map (miRNA) log fold change in breast cancer to the **Node Fill Color**, so that nodes with lower expression in breast cancer compared to normal samples will be colored blue, while nodes with higher cancer expression will be colored red.
      - map significance for expression values to **Node Border Width**, so that nodes with significant changes will appear with a thicker border.
 
 
-
-# NOTE: The following lines, which are not covered in today's tutorial (thus, we will not execute them), explain how to obtain the list of differentially expressed miRNAs that we used to filter our network. This is intended to pique your curiosity. For now, proceed directly to the next task.
-
-Pre-processed data (Reads per million mapped reads, or RPM-normalized read counts across samples) was obtained by using the R/Bioconductor package [*curatedTCGAData*](https://bioconductor.org/packages/release/data/experiment/vignettes/curatedTCGAData/inst/doc/curatedTCGAData.html). **Important: expression data are summarized here at the hairpin level!**, thus one will need mapping of hairpins to mature miRNAs to integrate expression data with the above MTI network (**--> how would you do that?**).  
-
-After running in R a differential expression analysis, over 400 miRNA precursors are found to be deregulated in breast cancer compared to normal tissues.
 
 ![Let's start with a set of miRNAs deregulated in breast cancer](https://github.com/allegravia/tutorial-cytoscape/blob/main/data/images/volcano_plot.svg)
 ---
