@@ -24,11 +24,11 @@ Experimentally validated miRNA-target interactions were downloaded from [miRTarB
 - download network file: [**hsa_MTI__strong.csv**] (https://github.com/allegravia/tutorial-cytoscape/blob/main/data/hsa_MTI__strong.csv). To this end, you will have to hit the "download raw file" icon from the right menu
 - launch Cytoscape
 - import the file to create a network using **File → Import → Network from File** (This will bring up the Import Network From Table dialog).
-        Click on Select None to disable all columns.
-        Click on the *miRNA* column and set this column as the *Source Node* column (green circle).
-        Click on the *Target gene* column and set this column as the *Target Node* column (red target).
-        Click on the *Experiments* column and set this column as the *Interaction type* column (purple arrow).
-        Click OK.This will create a network of 3589 nodes and 11170 edges, where each node represents either a miRNA or a target gene.
+        - Click on Select None to disable all columns.
+        - Click on the *miRNA* column and set this column as the *Source Node* column (green circle).
+        - Click on the *Target gene* column and set this column as the *Target Node* column (red target).
+        - Click on the *Experiments* column and set this column as the *Interaction type* column (purple arrow).
+        - Click OK.This will create a network of 3589 nodes and 11170 edges, where each node represents either a miRNA or a target gene.
         
 
 ---
