@@ -35,13 +35,16 @@ Experimentally validated miRNA-target interactions were downloaded from [miRTarB
 
 ### Loading a table of miRNA-node annotations from results of differential expression analysis
 
-In this tutorial, we will integrate our MTI network with results from a differential expression analysis performed on cancer miRNA expresion data. and focus on interactions involving miRNAs that exhibit differential expression (DE) in cancer. To achieve this, we will utilize a list of miRNAs identified as DE through the analysis of expression data obtained from high-throughput sequencing technology in breast cancer samples and normal tissues, sourced from  ![The Cancer Genome Atlas (TCGA) program](https://www.cancer.gov/about-nci/organization/ccg/research/structural-genomics/tcga).
+In this tutorial, we will integrate our MTI network with results from a differential expression analysis performed on cancer miRNA expresion data. 
+The results of DE analysis concers expression data obtained from high-throughput sequencing technology in breast cancer samples and normal tissues, which is publicly available through ![The Cancer Genome Atlas (TCGA) program](https://www.cancer.gov/about-nci/organization/ccg/research/structural-genomics/tcga).
+Integrated data will be later used to focus on interactions involving miRNAs that exhibit differential expression (DE) in cancer. 
 
 - download results from the analysis of miRNA differential expression in breast cancer, that is stored in file: [**TCGA_BRCA_mirs__DEoutput__wMiRBaseAnnotations.txt**] (https://github.com/allegravia/tutorial-cytoscape/blob/main/data/TCGA_BRCA_mirs__DEoutput__wMiRBaseAnnotations.txt)
 - import the file as node table columns by using **File → Import → Table from File** (This will bring up the Import Columns From Table dialog).
-            Click on the *miRNA.name* column and set this column as the *key* column (this column will be used to map annotations to network nodes).
-            Click on OK. This will import all of the data in the spreadsheet and associate each row with the corresponding node.
-            You should be able to see this in the Table Panel (bottom right panel, below network view).
+- Click on the *miRNA.name* column and set this column as the *key* column (this column will be used to map annotations to network nodes).
+- Click on OK. This will import all of the data in the spreadsheet and associate each row with the corresponding node. (Check import results in the Node Table Panel - that is the bottom right panel, below network view).
+
+--> Do all nodes in the network have values in the logFC column shown in the Node Table panel? Why?
 
 - recalling methods learned in this cytoscape tutorial on [**[Basic Data Visualization](https://cytoscape.org/cytoscape-tutorials/protocols/basic-data-visualization/#/) from [Cytoscape GitHub website](https://github.com/cytoscape/cytoscape-tutorials).**], modify your network view as follows:
 
