@@ -44,7 +44,7 @@ Integrated data will be later used to focus on interactions involving miRNAs tha
 - Click on the *miRNA.name* column and set this column as the *key* column (this column will be used to map annotations to network nodes).
 - Click on OK. This will import all of the data in the spreadsheet and associate each row with the corresponding node. (Check import results in the Node Table Panel - that is the bottom right panel, below network view).
 
---> Do all nodes in the network have values in the logFC column shown in the Node Table panel? Why?
+#1115 Do all nodes in the network have values in the logFC column shown in the Node Table panel? Why?
 
 - recalling methods learned in this cytoscape tutorial on [**[Basic Data Visualization](https://cytoscape.org/cytoscape-tutorials/protocols/basic-data-visualization/#/) from [Cytoscape GitHub website](https://github.com/cytoscape/cytoscape-tutorials).**], modify your network view as follows:
 
