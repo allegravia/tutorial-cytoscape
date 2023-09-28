@@ -57,7 +57,9 @@ In this MTI network nodes can be of different type, such as miRNA, protein-codin
 This will import all of the data in the spreadsheet and associate each row with the corresponding node.
 Again, you should be able to see the new annotation column added in the spreadsheet shown in the Node Table panel.
 
+>  **Question**: Do all nodes in the network have values in the biotype column shown in the Node Table panel?
 ---
+
 
 ### Adjust network style
 
@@ -65,13 +67,7 @@ Recalling methods learned in this cytoscape tutorial on [**[Basic Data Visualiza
 
      - map (miRNA) log fold change in breast cancer to the **Node Fill Color**, so that nodes with lower expression in breast cancer compared to normal samples will be colored blue, while nodes with higher cancer expression will be colored red.
      - map significance for expression values to **Node Border Width**, so that nodes with significant changes will appear with a thicker border.
-
----
-
-### Integration of node annotation from public databases
-
-            
-- map gene type to the Node Shape, so that miRNA nodes (that is, *miRNA_name* gene type!) will appear with a diamond shape, protein-coding nodes with a rectangular shape, and lncRNAs as parallelograms. Finally, set hexagon as the default node shape.
+     - map gene type to the **Node Shape**, so that miRNA nodes (that is, *miRNA_name* gene type!) will appear with a diamond shape, protein-coding nodes with a rectangular shape, and lncRNAs as parallelograms. Finally, set hexagon as the default node shape.
 
 ---
 
