@@ -48,6 +48,17 @@ Integrated data will be later used to focus on interactions involving miRNAs tha
 
 ---
 
+### Loading a table of node annotations (node biotype)
+In this MTI network nodes can be of different type, such as miRNA, protein-coding and non protein-coding nodes. To enrich the network with this useful information about the node: 
+
+- download annotations on gene biotype obtained from Ensembl [BioMart](https://www.ensembl.org/biomart/martview/), and stored in file: [**nodes2type.txt**] (https://github.com/allegravia/tutorial-cytoscape/blob/main/data/nodes2type.txt)
+- import the file as node table columns by using **File → Import → Table from File** (All the default values should be correct for importing the data, so just click on OK.)
+
+This will import all of the data in the spreadsheet and associate each row with the corresponding node.
+Again, you should be able to see the new annotation column added in the spreadsheet shown in the Node Table panel.
+
+---
+
 ### Adjust network style
 
 Recalling methods learned in this cytoscape tutorial on [**[Basic Data Visualization](https://cytoscape.org/cytoscape-tutorials/protocols/basic-data-visualization/#/) from [Cytoscape GitHub website](https://github.com/cytoscape/cytoscape-tutorials).**], modify your network view as follows:
@@ -55,23 +66,10 @@ Recalling methods learned in this cytoscape tutorial on [**[Basic Data Visualiza
      - map (miRNA) log fold change in breast cancer to the **Node Fill Color**, so that nodes with lower expression in breast cancer compared to normal samples will be colored blue, while nodes with higher cancer expression will be colored red.
      - map significance for expression values to **Node Border Width**, so that nodes with significant changes will appear with a thicker border.
 
-
-
-![Let's start with a set of miRNAs deregulated in breast cancer](https://github.com/allegravia/tutorial-cytoscape/blob/main/data/images/volcano_plot.svg)
----
-
-### Integration and visualization of experimental data in the MTI network
-
-- download results from the analysis of miRNA differential expression in breast cancer, that is stored in file: [**TCGA_BRCA_mirs__DEoutput__wMiRBaseAnnotations.txt**] (https://github.com/allegravia/tutorial-cytoscape/blob/main/data/TCGA_BRCA_mirs__DEoutput__wMiRBaseAnnotations.txt)
 ---
 
 ### Integration of node annotation from public databases
 
-- download annotations on gene biotype obtained from Ensembl [BioMart](https://www.ensembl.org/biomart/martview/), and stored in file: [**nodes2type.txt**] (https://github.com/allegravia/tutorial-cytoscape/blob/main/data/nodes2type.txt)
-- import the file as node table columns by using **File → Import → Table from File**.
-            All of the defaults should be correct for importing the data, so just click on OK.
-            This will import all of the data in the spreadsheet and associate each row with the corresponding node.
-            Again, you should be able to see the new annotation column added in the spreadsheet shown in the Table Panel.
             
 - map gene type to the Node Shape, so that miRNA nodes (that is, *miRNA_name* gene type!) will appear with a diamond shape, protein-coding nodes with a rectangular shape, and lncRNAs as parallelograms. Finally, set hexagon as the default node shape.
 
@@ -80,6 +78,9 @@ Recalling methods learned in this cytoscape tutorial on [**[Basic Data Visualiza
 ### Network filtering based on differential expression significance level and log-fold change
 
 Now we will use information gained from expression data analysis, such as significance observed in the differential expression test and log fold-change of expression level in breast cancer samples compared to normal samples, to select a subnetwork of miRNA-target interactions likely relevant to investigate disregulated pathways in breast cancer disease.
+
+![Here is a set of miRNAs deregulated in breast cancer](https://github.com/allegravia/tutorial-cytoscape/blob/main/data/images/volcano_plot.svg)
+
 
 To this end, use the **Filter** tab from the Control Panel (left menu) to find the most significant overall expression changes, as follows:
 
