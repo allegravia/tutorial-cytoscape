@@ -5,7 +5,7 @@ and then progressing to the integration of this network with valuable informatio
 Overall, the workflow will go through the following points:
 
     - Loading a network of validated miRNA-target interactions (MTI) derived from public databases
-    - Filtering on a set of differentially expressed miRNAs in the dataset of interest
+    - Loading a table of miRNA-node annotations from results of differential expression analysis
     - Integration and visualization of experimental data in the MTI network
     - Integration of node annotations from public databases
     - Network filtering based on differential expression significance level and log-fold change
@@ -33,9 +33,9 @@ Experimentally validated miRNA-target interactions were downloaded from [miRTarB
 
 ---
 
-### Filtering on a set of differentially expressed miRNAs in the dataset of interest
+### Loading a table of miRNA-node annotations from results of differential expression analysis
 
-In this tutorial, we will filter our MTI network and focus on interactions involving miRNAs that exhibit differential expression (DE) in cancer. To achieve this, we will utilize a list of miRNAs identified as DE through the analysis of expression data obtained from high-throughput sequencing technology in breast cancer samples and normal tissues, sourced from  ![The Cancer Genome Atlas (TCGA) program](https://www.cancer.gov/about-nci/organization/ccg/research/structural-genomics/tcga).
+In this tutorial, we will integrate our MTI network with results from a differential expression analysis performed on cancer miRNA expresion data. and focus on interactions involving miRNAs that exhibit differential expression (DE) in cancer. To achieve this, we will utilize a list of miRNAs identified as DE through the analysis of expression data obtained from high-throughput sequencing technology in breast cancer samples and normal tissues, sourced from  ![The Cancer Genome Atlas (TCGA) program](https://www.cancer.gov/about-nci/organization/ccg/research/structural-genomics/tcga).
 
 - download results from the analysis of miRNA differential expression in breast cancer, that is stored in file: [**TCGA_BRCA_mirs__DEoutput__wMiRBaseAnnotations.txt**] (https://github.com/allegravia/tutorial-cytoscape/blob/main/data/TCGA_BRCA_mirs__DEoutput__wMiRBaseAnnotations.txt)
 - import the file as node table columns by using **File → Import → Table from File** (This will bring up the Import Columns From Table dialog).
