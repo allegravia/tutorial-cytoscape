@@ -6,8 +6,8 @@ Overall, the workflow will go through the following points:
 
     - Loading a network of validated miRNA-target interactions (MTI) derived from public databases
     - Loading a table of miRNA-node annotations from results of differential expression analysis
-    - Integration and visualization of experimental data in the MTI network
-    - Integration of node annotations from public databases
+    - Loading a table of node annotations (node biotype)
+    - Adjust network style
     - Network filtering based on differential expression significance level and log-fold change
     - Network functional enrichment analysis on selected target nodes
     - Basic Network analysis
@@ -87,7 +87,7 @@ To this end, use the **Filter** tab from the Control Panel (left menu) to find t
     - Create a separate subnetwork from these selected nodes (ie. DE miRNAs and their experimentally validated target genes) by using **File → New Network  → from selected nodes, all edges**. This will create a new network in the left panel of 2783 nodes and 8002 edges. Rename this sub-network "sig_miRNAs".
     
 Now, your turn: 
-    - create a sub-sub-network from the *topDEmiRNAs* network by modifying the above filtering procedure to now select only miRNAs whose values of log-fold-change are at least 1 (or -1), or more extreme. Create a new network also including direct target genes of the selected miRNAs. (Hint: design your filter based on appropriate values of the "log2FC"). Name this sub-sub-network *sig_and_topDEmiRNAs*.
+    - create a sub-sub-network from the *sig_miRNAs* network by modifying the above filtering procedure to now select only miRNAs whose values of log-fold-change are at least 1 (or -1), or more extreme. Create a new network also including direct target genes of the selected miRNAs. (Hint: design your filter based on appropriate values of the "logFC"). Name this sub-sub-network *sig_and_topDEmiRNAs*.
     
 ---
 
