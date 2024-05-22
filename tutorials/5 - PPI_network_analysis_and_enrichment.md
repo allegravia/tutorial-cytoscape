@@ -30,6 +30,12 @@ In order to carry out this tutorial, you need:
 3.	The corresponding network table (file Parkinson_MITAB2.7.txt)
 4.	BINGO app installed in Cytoscape
 
+### vCytoscape 
+[https://cytoscape.org](https://cytoscape.org)
+Cytoscape is an open source software platform for visualising molecular interaction networks and biological pathways and integrating these networks with annotations, gene expression profiles and other state data. Although Cytoscape was originally designed for biological research, now it is a general platform for complex network analysis and visualisation. Cytoscape core distribution provides a basic set of features for data integration, analysis, and visualisation. Additional features are available as **Apps** (formerly called Plugins). **Apps** are available for network and molecular profiling analyses, new layouts, additional file format support, scripting, and connection with databases. They may be developed by anyone using the Cytoscape open API based on Java™ technology and App community development is encouraged. Most of the Apps are freely available from Cytoscape App Store.
+![image](https://github.com/allegravia/tutorial-cytoscape/assets/10530590/096e0a1d-db2d-450a-8a6d-88a17a197442)
+
+
 
 
 
