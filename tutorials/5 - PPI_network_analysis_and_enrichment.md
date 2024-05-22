@@ -175,29 +175,26 @@ In order to see the topological features of the network:
 
 ### GO enrichment using BiNGO
 In order to use BiNGO, you have to install the BiNGO app. 
-Go to Apps > App manager 
-And type BiNGO in the search box.
-The app will appear in the window below. Select BiNGO and then click on Install.
+- Go to Apps > App manager 
+- And type BiNGO in the search box.
+- The app will appear in the window below. Select BiNGO and then click on Install.
 
 We will do a functional enrichment to see whether the genes of our network are related to specific biological processes.
 
-Go to Apps > BiNGO
-
-A dialog windows will open. 
-Choose a name of the analysis and write it in the Cluster name box (e.g., parkinson_cluster or any other name). 
-
-Paste the list of nodes of our network in the “Paste Genes from Text” box. This can be done either from the Excel file of the network or from the Cytoscape Table panel. 
-Then:
-Select ontology file > GO_Biological_Process
-Select organism/annotation> Homo sapiens
-Start BiNGO
+- Go to Apps > BiNGO
+- A dialog windows will open.
+- Choose a name of the analysis and write it in the Cluster name box (e.g., parkinson_cluster or any other name).
+- Paste the list of nodes of our network in the “Paste Genes from Text” box. This can be done either from the Excel file of the network or from the Cytoscape Table panel. Then:
+- Select ontology file > GO_Biological_Process
+- Select organism/annotation> Homo sapiens
+- Start BiNGO
 
 The output of BiNGO is a table AND a network.
 
 The table reports the biological processes and statistical values (p-value, corrected p-value) and the genes associated to each biological process.
 
 The network represents connections between various biological processes. Each node of the graph is a biological process, colored by statistical significance (the more orange-like, the higher the statistical significance). 
-![image](https://github.com/allegravia/tutorial-cytoscape/assets/10530590/5aeac04c-af54-41ca-ab5c-0759b5a3d564)
+
 
 
 
