@@ -61,6 +61,7 @@ File > Import > Network from Public Database
 In the window that will appear, you will see as pre-selected the “Interaction Database Universal Client” option from the “Data source” drop-down menu. To search for the interactions in which the proteins from your list are involved, you just have to paste the list of the 15 UniProt AC identifiers (that you can find in the Parkinson_uniprot_list.txt file) in the “Enter Search Conditions” query box and click “Search”.
 
 Parkinson_uniprot_list.txt
+```
 P0CG48
 P09936
 P31749
@@ -76,6 +77,7 @@ P99999
 O60260
 O43464
 P0CG48
+```
 
 In the ‘Select Database’ box just below the numbers of interactions found by PSICQUIC, the different databases (or ‘services’) that PSICQUIC can access are listed. You can then select the databases you want to import interactions from. For this tutorial you have to only select IntAct from the Import column and then click on Import.
 
