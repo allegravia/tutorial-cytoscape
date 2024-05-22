@@ -92,23 +92,26 @@ You have different ways to save a session:
 Finding the optimal representation of a network can be challenging. 
 The network may appear crowded and difficult to interpret. We will then apply a number of filters and styles to make it more readable. 
 
-1.	Filter only interactions with a confidence Miscore score higher than 0.4.
-  a.	Click on the Filter tab and add a new condition clicking the “+" sign and choose Column Filter from the drop-down menu.
-  b.	Select “Edge: Confidence-Score-intact-miscore" and set the interval between 0.4 and 1.0 (Cytoscape may be localised in your own language, pay attention to what decimal separator you use, either full-stop or comma). The Fiter should be applied automatically and some edges in your network should now be coloured in red  (Selected edges).
-  c.	Go to the Network tab
-  d.	Create a new network using only selected nodes: File > New Network > From selected nodes, selected edges) 
-  e.	A sub network (Merged Network (1)) of the Merged Network will appear. Click on Merged Network (1). You will see on the right the filtered network.
-  f.	You will notice that several self-loops have now become visible. These may be real and important interactions and in general you may want to retain them. 
+#### Filter only interactions with a confidence Miscore score higher than 0.4.
+1. Click on the Filter tab and add a new condition clicking the “+" sign and choose Column Filter from the drop-down menu.
+2. Select “Edge: Confidence-Score-intact-miscore" and set the interval between 0.4 and 1.0 (Cytoscape may be localised in your own language, pay attention to what decimal separator you use, either full-stop or comma). The Fiter should be applied automatically and some edges in your network should now be coloured in red  (Selected edges).
+3. Go to the Network tab
+4. Create a new network using only selected nodes: File > New Network > From selected nodes, selected edges)
+5. A sub network (Merged Network (1)) of the Merged Network will appear. Click on Merged Network (1). You will see on the right the filtered network.
+6. You will notice that several self-loops have now become visible. These may be real and important interactions and in general you may want to retain them. 
       However, we will remove them here in order to improve how the network looks.
 
-2.	Remove duplicated edges:
-  a.	Edit > Remove duplicated edges. In the dialog box, select Merged Network (1) and click Ok.
-3.	Remove duplicated nodes:
-  a.	Edit > Remove self-loops. In the dialog box, select Merged Network (1) and click Ok.
-4.	Let’s have a look at the columns that have been loaded with our network. Go to the Table Panel below the visualisation panel.
-  a.	From the Change Table Mode, select Show all (select all the nodes and edges of the network).
-  b.	Have a look at the Table Panel below the main window. By default, you should be in the ‘Node Table’ tab. You can see a number of columns being listed there; some of them with obvious meaning and some others whose content may not be so clear to you. Let’s clear this view a bit, so only meaningful information is shown.
-  c.	Click on the ‘Show Column’ icon . All the columns will now be visible as a selectable list. Choose the following node columns to be displayed: 
+#### Remove duplicated edges:
+Edit > Remove duplicated edges. In the dialog box, select Merged Network (1) and click Ok.
+#### Remove duplicated nodes:
+Edit > Remove self-loops. In the dialog box, select Merged Network (1) and click Ok.
+
+#### Let’s have a look at the columns that have been loaded with our network. 
+- Go to the Table Panel below the visualisation panel.
+- From the Change Table Mode, select Show all (select all the nodes and edges of the network).
+- Have a look at the Table Panel below the main window. By default, you should be in the ‘Node Table’ tab. You can see a number of columns being listed there; some of them with obvious meaning and some others whose content may not be so clear to you. Let’s clear this view a bit, so only meaningful information is shown.
+- Click on the ‘Show Column’ icon . All the columns will now be visible as a selectable list. Choose the following node columns to be displayed:
+```
     • name
     • Human Readable Label
     • Interactor Type
@@ -118,7 +121,10 @@ The network may appear crowded and difficult to interpret. We will then apply a 
     • uniprotkb_accession
     • Features
     • Annotations
-  d.	Now go to the ‘Edge Table’ tab and do the same with the following edge columns:
+```
+- Now go to the ‘Edge Table’ tab and do the same with the following edge columns:
+
+```
     • Interaction
     • Annotation
     • Author
@@ -135,11 +141,12 @@ The network may appear crowded and difficult to interpret. We will then apply a 
     • Xref
     • Xref ID
     • Parameters
-5.	Only retain interactions from Human
-  a.	Databases contain interactions form several species. You can recognize nodes from “human-other species” from their colour in the network. If you click on a node, the corresponding row will be shown in the node table. The protein’s organism can be found in the Taxonomy Name column or the Taxonomy ID. 
-  b.	The ‘Taxonomy’ node column can be used to produce a human proteins-only network. Go to the Select tab in the Control panel and choose ‘Create new filter’ in the far-right drop-down menu and give your filter a name (e.g., ‘parkinson-human’).
-  c.	Go to the ‘+’ icon and select to create a ‘Column Filter’. Choose the column you want to use for filtering. In this case, we will use the node column ‘Taxonomy ID’. Select it and you will get a search bar and two drop-down menus: one called with the name of the column you selected and the other in which you can select the operator you want to use for the search (‘contains’, ‘doesn’t contain’, ‘is’, ‘is not’ and ‘contains regex’). The search bar can be used to type the value you want to select for. The ‘Taxonomy ID’ column stores NCBI taxonomy identifiers for the species origin of each protein in the network. The code for human is ‘9606’, write it down in the search bar and then click ‘Apply’.
-  d.	The nodes that bear the ‘9606’ column will be then selected and highlighted in the network. Combinations of different columns can be applied by adding more selection criteria using the ‘+’ icon.
-  e.	Now generate a new network containing only human proteins by going to File > New Network > From Selected Nodes, All Edges. 
-  f.	Alternatively, you can click the quick ‘New Network From Selection’ button.
+```
+#### Only retain interactions from Human
+1. Databases contain interactions form several species. You can recognize nodes from “human-other species” from their colour in the network. If you click on a node, the corresponding row will be shown in the node table. The protein’s organism can be found in the Taxonomy Name column or the Taxonomy ID.
+2. The ‘Taxonomy’ node column can be used to produce a human proteins-only network. Go to the Select tab in the Control panel and choose ‘Create new filter’ in the far-right drop-down menu and give your filter a name (e.g., ‘parkinson-human’).
+3. Go to the ‘+’ icon and select to create a ‘Column Filter’. Choose the column you want to use for filtering. In this case, we will use the node column ‘Taxonomy ID’. Select it and you will get a search bar and two drop-down menus: one called with the name of the column you selected and the other in which you can select the operator you want to use for the search (‘contains’, ‘doesn’t contain’, ‘is’, ‘is not’ and ‘contains regex’). The search bar can be used to type the value you want to select for. The ‘Taxonomy ID’ column stores NCBI taxonomy identifiers for the species origin of each protein in the network. The code for human is ‘9606’, write it down in the search bar and then click ‘Apply’.
+4. The nodes that bear the ‘9606’ column will be then selected and highlighted in the network. Combinations of different columns can be applied by adding more selection criteria using the ‘+’ icon.
+5. Now generate a new network containing only human proteins by going to File > New Network > From Selected Nodes, All Edges.
+6. Alternatively, you can click the quick ‘New Network From Selection’ button.
 
