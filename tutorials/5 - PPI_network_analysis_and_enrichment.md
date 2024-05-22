@@ -150,3 +150,14 @@ Edit > Remove self-loops. In the dialog box, select Merged Network (1) and click
 5. Now generate a new network containing only human proteins by going to File > New Network > From Selected Nodes, All Edges.
 6. Alternatively, you can click the quick ‘New Network From Selection’ button.
 
+#### Styles
+We will now apply a few styles. Go to the control panel on the left and click on the Style botton.
+##### Application of styles to nodes. 
+We want to change the colour and the shape of nodes
+1. Change the colour of nodes: Click on the Node tab (at the bottom). Click on the Fill Color square and choose a different colour.
+2. If you want to colour by a specific column feature,  click on the small black triangle on the right. From the scroll-down menu, select a column feature, e.g. Taxonomy ID and then click on the coloured rectangle corresponding to the Taxonomy ID 9606. Choose the feature “Shared name” thus colouring all nodes.
+3. Change the shape of nodes. Click on the Shape square and set Ellipse. You can choose the shape by column feature.  Choose the feature “Shared name” thus setting all nodes to Ellipse.
+##### Application of styles to edges. 
+Here we will apply more advanced filters such as “discrete mapping”. Click on the Edge tab at the bottom of the control panel. 
+*Stroke color* (unselected): Click on the small black triangle on the right, choose “Interaction type” in the column feature scroll-down menu and Discrete mapping in the Mapping type scroll-down menu.  
+- Choose red for “association”, green for “direct interaction”, and yellow for “physical association”.
