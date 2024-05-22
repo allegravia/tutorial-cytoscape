@@ -158,6 +158,46 @@ We want to change the colour and the shape of nodes
 2. If you want to colour by a specific column feature,  click on the small black triangle on the right. From the scroll-down menu, select a column feature, e.g. Taxonomy ID and then click on the coloured rectangle corresponding to the Taxonomy ID 9606. Choose the feature “Shared name” thus colouring all nodes.
 3. Change the shape of nodes. Click on the Shape square and set Ellipse. You can choose the shape by column feature.  Choose the feature “Shared name” thus setting all nodes to Ellipse.
 ##### Application of styles to edges. 
-Here we will apply more advanced filters such as “discrete mapping”. Click on the Edge tab at the bottom of the control panel. 
+Here we will apply more advanced filters such as “discrete mapping”. Click on the Edge tab at the bottom of the control panel. <br>
 *Stroke color* (unselected): Click on the small black triangle on the right, choose “Interaction type” in the column feature scroll-down menu and Discrete mapping in the Mapping type scroll-down menu.  
 - Choose red for “association”, green for “direct interaction”, and yellow for “physical association”.
+
+### Network analysis
+In order to see the topological features of the network:
+- Tools > Analyze Network (our network is undirected).
+- A Result panel window will appear, which can be used to answer questions like:
+1. What is the clustering coefficient?
+2. What is the average path length?
+3. Would you say it is a “Natural Network" according to the definition given during the “Introduction to Graph Theory" session?
+4. Observe, for instance, Degree Distributions and try "Fit Power Law" (Natural Networks are said to have an exponent between 2 and 3).
+5. Explore the different tabs of the Results panel. For example, click on Node degree distribution and show the distribution as an Histogram (this can be changed using the Chart Setting button).
+6. Hubs are nodes with very high degree (number of links). What nodes do you think are hubs in you network? Find Hubs in Table Panel and sort by degree.
+
+### GO enrichment using BiNGO
+In order to use BiNGO, you have to install the BiNGO app. 
+Go to Apps > App manager 
+And type BiNGO in the search box.
+The app will appear in the window below. Select BiNGO and then click on Install.
+
+We will do a functional enrichment to see whether the genes of our network are related to specific biological processes.
+
+Go to Apps > BiNGO
+
+A dialog windows will open. 
+Choose a name of the analysis and write it in the Cluster name box (e.g., parkinson_cluster or any other name). 
+
+Paste the list of nodes of our network in the “Paste Genes from Text” box. This can be done either from the Excel file of the network or from the Cytoscape Table panel. 
+Then:
+Select ontology file > GO_Biological_Process
+Select organism/annotation> Homo sapiens
+Start BiNGO
+
+The output of BiNGO is a table AND a network.
+
+The table reports the biological processes and statistical values (p-value, corrected p-value) and the genes associated to each biological process.
+
+The network represents connections between various biological processes. Each node of the graph is a biological process, colored by statistical significance (the more orange-like, the higher the statistical significance). 
+![image](https://github.com/allegravia/tutorial-cytoscape/assets/10530590/5aeac04c-af54-41ca-ab5c-0759b5a3d564)
+
+
+
