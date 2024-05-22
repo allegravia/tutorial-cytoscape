@@ -37,7 +37,7 @@ Cytoscape is an open source software platform for visualising molecular interact
 ## Tutorial
 
 ### Dataset(s)
-The dataset used for the guided analysis example presented in this tutorial consists of a set of 15 proteins involved in Parkinson disease. 
+The dataset used for the guided analysis example presented in this tutorial consists of a set of 15 proteins involved in Parkinson disease ([parkinson_uniprot_list.txt](https://github.com/allegravia/tutorial-cytoscape/blob/main/data/parkinson_uniprot_list.txt)). 
 More specifically, our goal will be to find if there is experimental evidence for interactions within the proteins linked to the Parkinson diseases. To this end, we selected the genes derived from the Parkinson pathway curated in [SIGNOR database](https://signor.uniroma2.it/pathway_browser.php?organism=&pathway_list=SIGNOR-PD&x=15&y=12). From the visualisation page, it is possible to download the pathway relations and to select the genes involved in this pathway and to create a dataset that we will use to generate the interaction pathway.
 With this selected dataset of 15 proteins involved in Parkinson disease, we can generated an interaction network in the form of a tab-separated table (Parkinson_MITAB2.7.txt).
 This tab-separated table can be generated either directly from the PSICQUIC web page (http://www.ebi.ac.uk/Tools/webservices/psicquic/view/) and then this network can be loaded in Cytoscape or we can generate the interaction network between the Parkinson-linked proteins using directly the PSICQUIC client of Cytoscape.
