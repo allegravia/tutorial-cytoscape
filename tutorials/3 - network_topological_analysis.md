@@ -9,7 +9,7 @@ This is the Cytoscape User Manual page where the tool NetworkAnalyzer is describ
 - Charts for topological coefficients, betweenness, and closeness.
 - Distributions of degrees, neighborhood connectiveness, average clustering coefficients, shortest path lengths, number of shared neighbors and stress centrality.
 
-Comprehensive online documentation and a tutorial for NetworkAnalyzer are available at [http://med.bioinf.mpi-inf.mpg.de/networkanalyzer/](http://med.bioinf.mpi-inf.mpg.de/networkanalyzer/).
+Comprehensive online documentation for NetworkAnalyzer is available at ([http://med.bioinf.mpi-inf.mpg.de/networkanalyzer/](https://manual.cytoscape.org/en/3.7.2/Network_Analyzer.html)).
 
 ### Reference
 Doncheva, N., Assenov, Y., Domingues, F. et al. Topological analysis and interactive visualization of biological networks and protein structures. Nat Protoc 7, 670–685 (2012). https://doi.org/10.1038/nprot.2012.004
