@@ -1,6 +1,6 @@
 # Topological analysis of networks
 
-[Network Analyzer: Topological analysis of networks](https://manual.cytoscape.org/en/3.10.1/Network_Analyzer.html)
+[Network Analyzer: Topological analysis of networks](https://manual.cytoscape.org/en/3.7.2/Network_Analyzer.html)
 
 This is the Cytoscape User Manual page where the tool NetworkAnalyzer is described. NetworkAnalyzer computes a comprehensive set of topological metrics for undirected and directed networks, including:
 
